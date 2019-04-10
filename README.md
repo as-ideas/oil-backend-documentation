@@ -52,6 +52,15 @@ for details how to define a new locale version.
 
 To get an overview of OIL.js configuration parameters please read the [OIL-Documentation](https://oil.axelspringer.com/docs/last-release) (Section "Functional Configuration Parameters").
 
+### Custom Vendors
+This page provides an overview of your Custom Vendors.
+
+You can add new Custom Vendor or edit existing Custom Vendors.
+
+
+
+### Custom Vendors Lists
+
 ### Localization
 
 This page provides an overview of all locales that are currently available. A locale is defined by its name (locale id) and version. You can choose an existing locale using the
@@ -76,5 +85,5 @@ Please follow these steps:
 
 Congratulations! You're done.
 
-![OIL-JS Configuration](documentation/oil-backoffice.gif?raw=true)
+
  
