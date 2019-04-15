@@ -53,13 +53,19 @@ for details how to define a new locale version.
 To get an overview of OIL.js configuration parameters please read the [OIL-Documentation](https://oil.axelspringer.com/docs/last-release) (Section "Functional Configuration Parameters").
 
 ### Custom Vendors
-This page provides an overview of your Custom Vendors.
-
-You can add new Custom Vendor or edit existing Custom Vendors.
-
-
+This page provides an overview of your non IAB vendors. 
+You can add new custom vendor or edit existing ones. ![OIL-JS Configuration](documentation/custom_vendors.jpg?raw=true)
+For each Custom Vendor you have to provide an unique name and a policy URL.
+The opt-in and opt-out JavasScript snippets will be executed on consent change.
+![OIL-JS Configuration](documentation/edit_custom_vendor.jpg?raw=true)
 
 ### Custom Vendors Lists
+You can group your custom vendors in a custom vendor list ![OIL-JS Configuration](documentation/create_new_custom_vendors_list_version.jpg?raw=true)
+The list must not be empty.
+Each change results in a new version of your list and.
+The latest version of your list can be uploaded to S3 and then be used in a new Configuration.
+![OIL-JS Configuration](documentation/custom_vendor_lists.jpg?raw=true)
+
 
 ### Localization
 
