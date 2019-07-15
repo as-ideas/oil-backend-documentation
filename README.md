@@ -16,7 +16,11 @@ It is a web application with the following feature set:
 
   You can create your very own OIL.js package containing your specific configuration and localizing. You can upload it to our Content Delivery Network (Amazon CloudFront) and 
   integrate it in your website with only two simple 'script' tags.
+  
+* Use OIL.js with non IAB vendors
 
+  You can add a list of custom vendors to your OIL.js configuration, that will be notified when consent changes.
+  
 ## Account
 To access the OIL Backoffice Service an account is required. To get one please send an email to [oil-support@asideas.de](mailto:oil-support@asideas.de). As soon as you are entitled
 to access the OIL Backoffice Service
@@ -52,6 +56,21 @@ for details how to define a new locale version.
 
 To get an overview of OIL.js configuration parameters please read the [OIL-Documentation](https://oil.axelspringer.com/docs/last-release) (Section "Functional Configuration Parameters").
 
+### Custom Vendors
+This page provides an overview of your non IAB vendors. 
+You can add new custom vendor or edit existing ones. ![OIL-JS Configuration](documentation/custom_vendors.jpg?raw=true)
+For each Custom Vendor you have to provide a unique name and a policy URL.
+The opt-in and opt-out JavasScript snippets will be executed on consent change.
+![OIL-JS Configuration](documentation/edit_custom_vendor.jpg?raw=true)
+
+### Custom Vendors Lists
+You can group your custom vendors in a custom vendor list ![OIL-JS Configuration](documentation/create_new_custom_vendors_list_version.jpg?raw=true)
+The list must not be empty.
+Each change results in a new version of your list.
+The latest version of your list can be uploaded to S3 and then be used in a new Configuration.
+![OIL-JS Configuration](documentation/custom_vendor_lists.jpg?raw=true)
+
+
 ### Localization
 
 This page provides an overview of all locales that are currently available. A locale is defined by its name (locale id) and version. You can choose an existing locale using the
@@ -76,5 +95,5 @@ Please follow these steps:
 
 Congratulations! You're done.
 
-![OIL-JS Configuration](documentation/oil-backoffice.gif?raw=true)
+
  
